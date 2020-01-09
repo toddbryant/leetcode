@@ -1,4 +1,10 @@
-// This solution is ugly as sin but gets the job done
+/*
+    This solution is ugly as sin but gets the job done
+
+    Okay so the optimal solution here was to sort the list,
+    then recursively look for N-1 sums, until we reduce to 2sum. 
+    Then we use the converging pointer algorithm.
+*/
 
 public class IntListEqualityComparer : IEqualityComparer<IList<int>> {
     public bool Equals(IList<int> t1, IList<int> t2) {
