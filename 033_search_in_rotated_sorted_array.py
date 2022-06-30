@@ -10,6 +10,10 @@ You must write an algorithm with O(log n) runtime complexity.
 
 from typing import List
 
+"""
+    Initially I was doing two binary searches, one for pivot, then one for target.
+    But we can just do a single binary search, switching direction when we encounter a pivot.
+"""
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         i, j = 0, len(nums)-1

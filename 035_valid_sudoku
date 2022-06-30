@@ -15,7 +15,7 @@ from typing import List
 class Solution:
     BOX_STARTS = [(i,j) for i in range(0,9,3) for j in range(0,9,3)]
 
-    def isValidSudoku_orig(self, board: List[List[str]]) -> bool:
+    def isValidSudoku(self, board: List[List[str]]) -> bool:
         for row in board:
            if not self.isValidGroup(row):
                 return False
@@ -34,11 +34,12 @@ class Solution:
         return True
 
     def isValidGroup(self, group: List[str]) -> bool:
-        digits = set()
+        digits = 1
         for digit in group:
-            if digit in digits:
-                return False
             if digit != '.':
-                digits.add(digit)
+                digit = int(digit)
+                if (digits >> digit) & 1:
+                    return False
+                digits += (1 << digit)
         return True
         
