@@ -2,3 +2,7 @@
 49,group anagrams, 05:44, ez pz
 50,pow,10:00,time is an estimate but pretty straightforward
 51,n queens,40:00,a little slow but it was a hard
+52,n queens 2,10:00,absolutely slayed based on feedback from #51
+53,maximum subarray,5:00,maybe less very easy dp
+54,spiral matrix,30:00,mess on the corner cases
+55,jump game,4:00,slayed with greedy algorithm learned earlier
