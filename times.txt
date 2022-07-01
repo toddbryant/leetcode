@@ -1,0 +1,4 @@
+48,rotate image, 23:30, went ok a little slow working out recurrence and slightly overcomplicated cycles
+49,group anagrams, 05:44, ez pz
+50,pow,10:00,time is an estimate but pretty straightforward
+51,n queens,40:00,a little slow but it was a hard
